@@ -21,9 +21,9 @@ SVGKDefine define some common macro used for private header.
 #define SVGKitLogVerbose(frmt, ...) LOG_MAYBE(LOG_ASYNC_ENABLED, LOG_LEVEL_DEF, DDLogFlagVerbose, SVGKIT_LOG_CONTEXT, nil, __PRETTY_FUNCTION__, frmt, ##__VA_ARGS__)
 
 #if DEBUG
-static const int ddLogLevel = DDLogLevelWarning;
+static const int ddLogLevel = DDLogLevelError;
 #else
-static const int ddLogLevel = DDLogLevelWarning;
+static const int ddLogLevel = DDLogLevelError;
 #endif
 
 #if SVGKIT_MAC
